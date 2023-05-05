@@ -1,0 +1,263 @@
+INFO  | 2023-03-09 14:10:24 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.14.Final}
+INFO  | 2023-03-09 14:10:24 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2023-03-09 14:10:24 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2023-03-09 14:10:25 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+INFO  | 2023-03-09 14:10:25 | [main] internal.LobCreatorBuilderImpl (LobCreatorBuilderImpl.java:124) - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  | 2023-03-09 14:10:25 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@614aeccc
+INFO  | 2023-03-09 14:10:25 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@614aeccc
+INFO  | 2023-03-09 14:10:25 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@322803db
+INFO  | 2023-03-09 14:10:25 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@322803db
+INFO  | 2023-03-09 14:10:26 | [main] util.Version (Version.java:30) - HV000001: Hibernate Validator 5.3.6.Final
+INFO  | 2023-03-09 14:12:22 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.14.Final}
+INFO  | 2023-03-09 14:12:22 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2023-03-09 14:12:22 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2023-03-09 14:12:24 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+INFO  | 2023-03-09 14:12:24 | [main] internal.LobCreatorBuilderImpl (LobCreatorBuilderImpl.java:124) - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  | 2023-03-09 14:12:24 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@322803db
+INFO  | 2023-03-09 14:12:24 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@322803db
+INFO  | 2023-03-09 14:12:24 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@f14e5bf
+INFO  | 2023-03-09 14:12:24 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@f14e5bf
+INFO  | 2023-03-09 14:12:25 | [main] util.Version (Version.java:30) - HV000001: Hibernate Validator 5.3.6.Final
+WARN  | 2023-03-09 14:14:59 | [main] internal.ExceptionHandlerLoggedImpl (ExceptionHandlerLoggedImpl.java:27) - GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:460) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:710) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:726) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:616) ~[spring-orm-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:600) ~[spring-orm-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:85) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at com.makercheckerapp.web.controller.Main.main(Main.java:15) [classes/:?]
+Caused by: java.sql.SQLException: ORA-02298: cannot validate (TRAINING.FKOB7RW4SU44XNHFGAIYKD6WPRU) - parent keys not found
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:754) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:210) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:963) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1192) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:1731) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:1701) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	... 41 more
+WARN  | 2023-03-09 14:15:01 | [main] spi.SqlExceptionHelper (SqlExceptionHelper.java:129) - SQL Error: 2291, SQLState: 23000
+ERROR | 2023-03-09 14:15:01 | [main] spi.SqlExceptionHelper (SqlExceptionHelper.java:131) - ORA-02291: integrity constraint (TRAINING.FK8PAAWQEWC4FO5YL5M41XDR37V) violated - parent key not found
+
+INFO  | 2023-03-09 14:15:01 | [main] internal.AbstractBatchImpl (AbstractBatchImpl.java:193) - HHH000010: On release of batch it still contained JDBC statements
+ERROR | 2023-03-09 14:15:01 | [main] internal.ExceptionMapperStandardImpl (ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+INFO  | 2023-03-09 14:16:28 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.14.Final}
+INFO  | 2023-03-09 14:16:28 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2023-03-09 14:16:28 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2023-03-09 14:16:29 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+INFO  | 2023-03-09 14:16:29 | [main] internal.LobCreatorBuilderImpl (LobCreatorBuilderImpl.java:124) - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  | 2023-03-09 14:16:29 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@614aeccc
+INFO  | 2023-03-09 14:16:29 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@614aeccc
+INFO  | 2023-03-09 14:16:29 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@322803db
+INFO  | 2023-03-09 14:16:29 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@322803db
+INFO  | 2023-03-09 14:16:30 | [main] util.Version (Version.java:30) - HV000001: Hibernate Validator 5.3.6.Final
+WARN  | 2023-03-09 14:18:49 | [main] internal.ExceptionHandlerLoggedImpl (ExceptionHandlerLoggedImpl.java:27) - GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:460) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:710) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:726) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:616) ~[spring-orm-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:600) ~[spring-orm-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:85) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at com.makercheckerapp.web.controller.Main.main(Main.java:15) [classes/:?]
+Caused by: java.sql.SQLException: ORA-02298: cannot validate (TRAINING.FKOP0EIMKNXV2FSCUYI1J3FXK1W) - parent keys not found
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:754) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:210) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:963) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1192) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:1731) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:1701) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	... 41 more
+WARN  | 2023-03-09 14:18:51 | [main] spi.SqlExceptionHelper (SqlExceptionHelper.java:129) - SQL Error: 2291, SQLState: 23000
+ERROR | 2023-03-09 14:18:51 | [main] spi.SqlExceptionHelper (SqlExceptionHelper.java:131) - ORA-02291: integrity constraint (TRAINING.FK8PAAWQEWC4FO5YL5M41XDR37V) violated - parent key not found
+
+INFO  | 2023-03-09 14:18:51 | [main] internal.AbstractBatchImpl (AbstractBatchImpl.java:193) - HHH000010: On release of batch it still contained JDBC statements
+ERROR | 2023-03-09 14:18:51 | [main] internal.ExceptionMapperStandardImpl (ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+INFO  | 2023-03-09 14:22:27 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.14.Final}
+INFO  | 2023-03-09 14:22:27 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2023-03-09 14:22:27 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2023-03-09 14:22:28 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+INFO  | 2023-03-09 14:22:29 | [main] internal.LobCreatorBuilderImpl (LobCreatorBuilderImpl.java:124) - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  | 2023-03-09 14:22:29 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@659a2455
+INFO  | 2023-03-09 14:22:29 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@659a2455
+INFO  | 2023-03-09 14:22:29 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@6f8e0cee
+INFO  | 2023-03-09 14:22:29 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@6f8e0cee
+INFO  | 2023-03-09 14:22:29 | [main] util.Version (Version.java:30) - HV000001: Hibernate Validator 5.3.6.Final
+WARN  | 2023-03-09 14:24:23 | [main] spi.SqlExceptionHelper (SqlExceptionHelper.java:129) - SQL Error: 2291, SQLState: 23000
+ERROR | 2023-03-09 14:24:23 | [main] spi.SqlExceptionHelper (SqlExceptionHelper.java:131) - ORA-02291: integrity constraint (TRAINING.FK8PAAWQEWC4FO5YL5M41XDR37V) violated - parent key not found
+
+INFO  | 2023-03-09 14:24:23 | [main] internal.AbstractBatchImpl (AbstractBatchImpl.java:193) - HHH000010: On release of batch it still contained JDBC statements
+ERROR | 2023-03-09 14:24:23 | [main] internal.ExceptionMapperStandardImpl (ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+INFO  | 2023-03-09 14:46:32 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.14.Final}
+INFO  | 2023-03-09 14:46:32 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2023-03-09 14:46:32 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2023-03-09 14:46:34 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+INFO  | 2023-03-09 14:46:34 | [main] internal.LobCreatorBuilderImpl (LobCreatorBuilderImpl.java:124) - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  | 2023-03-09 14:46:34 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@659a2455
+INFO  | 2023-03-09 14:46:34 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@659a2455
+INFO  | 2023-03-09 14:46:34 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@6f8e0cee
+INFO  | 2023-03-09 14:46:34 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@6f8e0cee
+INFO  | 2023-03-09 14:46:35 | [main] util.Version (Version.java:30) - HV000001: Hibernate Validator 5.3.6.Final
+WARN  | 2023-03-09 14:49:49 | [main] spi.SqlExceptionHelper (SqlExceptionHelper.java:129) - SQL Error: 2291, SQLState: 23000
+ERROR | 2023-03-09 14:49:49 | [main] spi.SqlExceptionHelper (SqlExceptionHelper.java:131) - ORA-02291: integrity constraint (TRAINING.FK8PAAWQEWC4FO5YL5M41XDR37V) violated - parent key not found
+
+INFO  | 2023-03-09 14:49:49 | [main] internal.AbstractBatchImpl (AbstractBatchImpl.java:193) - HHH000010: On release of batch it still contained JDBC statements
+ERROR | 2023-03-09 14:49:49 | [main] internal.ExceptionMapperStandardImpl (ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+INFO  | 2023-03-09 15:04:30 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.14.Final}
+INFO  | 2023-03-09 15:04:30 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2023-03-09 15:04:30 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2023-03-09 15:04:33 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+INFO  | 2023-03-09 15:04:33 | [main] internal.LobCreatorBuilderImpl (LobCreatorBuilderImpl.java:124) - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  | 2023-03-09 15:04:33 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@659a2455
+INFO  | 2023-03-09 15:04:33 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@659a2455
+INFO  | 2023-03-09 15:04:33 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@6f8e0cee
+INFO  | 2023-03-09 15:04:33 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@6f8e0cee
+WARN  | 2023-03-09 15:04:33 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerDaoImpl' defined in file [C:\Users\ishika.baid\IdeaProjects\makercheckerapp\target\classes\com\makercheckerapp\model\dao\impl\CustomerDaoImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sf' defined in class path resource [model-config.xml]: Invocation of init method failed; nested exception is org.hibernate.cfg.NotYetImplementedException: Collections having FK in secondary table
+INFO  | 2023-03-09 15:09:00 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.14.Final}
+INFO  | 2023-03-09 15:09:00 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2023-03-09 15:09:00 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2023-03-09 15:09:01 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+INFO  | 2023-03-09 15:09:01 | [main] internal.LobCreatorBuilderImpl (LobCreatorBuilderImpl.java:124) - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  | 2023-03-09 15:09:01 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@614aeccc
+INFO  | 2023-03-09 15:09:01 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@614aeccc
+INFO  | 2023-03-09 15:09:01 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@322803db
+INFO  | 2023-03-09 15:09:01 | [main] type.BasicTypeRegistry (BasicTypeRegistry.java:148) - HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@322803db
+INFO  | 2023-03-09 15:09:02 | [main] util.Version (Version.java:30) - HV000001: Hibernate Validator 5.3.6.Final
+WARN  | 2023-03-09 15:09:06 | [main] internal.ExceptionHandlerLoggedImpl (ExceptionHandlerLoggedImpl.java:27) - GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:460) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:710) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:726) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:616) ~[spring-orm-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:600) ~[spring-orm-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:85) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at com.makercheckerapp.web.controller.Main.main(Main.java:15) [classes/:?]
+Caused by: java.sql.SQLException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:754) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:210) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:963) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1192) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:1731) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:1701) ~[ojdbc14-10.2.0.5.jar:Oracle JDBC Driver version - "10.2.0.5.0"]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.2.14.Final.jar:5.2.14.Final]
+	... 42 more
+INFO  | 2023-03-09 15:09:08 | [main] internal.SchemaCreatorImpl (SchemaCreatorImpl.java:489) - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@27be17c8'

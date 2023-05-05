@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <import resource="ds-servlet.xml"/>
+
+    <security:http auto-config="true">
+        <security:intercept-url pattern="/maker/**" access="hasRole('MAKER')"/>
+        <security:intercept-url pattern="/checker/**" access="hasRole('CHECKER')"/>
+        <security:intercept-url pattern="/login/**" access="permitAll"/>
+
+        <security:form-login login-page="/login" default-target-url="/showall" login-processing-url="/authuser"
+                             username-parameter="email" password-parameter="password" authentication-failure-url="/login?error=true" always-use-default-target="true"/>
+
+        <security:logout logout-url="/logout" logout-success-url="/login"/>
+        <security:access-denied-handler error-page="/errorpage"/>
+        <security:form-login/>
+    </security:http>
+
+    <security:authentication-manager>
+        <security:authentication-provider user-service-ref="userdetail">
+            <security:password-encoder ref="encoder"/>
+        </security:authentication-provider>
+    </security:authentication-manager>
+</beans>
